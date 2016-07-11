@@ -5,7 +5,18 @@
 			<title>
 				Code
 			</title>
+			<link rel="stylesheet" href="public/css/bootstrap.min.css" />
+			<link rel="stylesheet" href="{{ base_url() }}/css/app.cs" />
 		</head>
 		<body>
+
+			{% include 'templates/partials/navigation.twig' %}
+
+			<div class="container" >
+				{% block content %}
+				{% endblock %}
+			</div>
+			<script src="public/js/jquery-2.2.0.min.js"></script>
+			<script src="public/js/bootstrap.min.js"></script>
 		</body>
 	</html>
